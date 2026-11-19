@@ -30,7 +30,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-$webhook_url = 'https://discord.com/api/webhooks/1549454739236847716/jBb_RGNIPEJFhyZaUoRjvcYprJSaHZoeB4vhRvh_Ms5ct1yFK9SwADxcXpqSjBs21yGL';
+$webhook_url = 'VOTRE WEBHOOK ICI';
 
 $discord_data = [
     'embeds' => [
