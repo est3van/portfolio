@@ -11,171 +11,478 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estevan BARBAULT — Administration réseau & systèmes</title>
-    <meta name="description" content="Portfolio d'Estevan BARBAULT, étudiant en BTS SIO option SISR. Administration réseau, systèmes Linux/Windows, virtualisation Proxmox, homelab.">
-    <meta name="keywords" content="BTS SIO, SISR, administration réseau, Linux, Proxmox, homelab, Estevan BARBAULT, Haute-Savoie">
-    <meta name="author" content="Estevan BARBAULT">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://ebarbault.fr/">
-    <link rel="alternate" hreflang="fr" href="https://ebarbault.fr/">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ebarbault.fr/">
-    <meta property="og:title" content="Estevan BARBAULT — BTS SIO SISR">
-    <meta property="og:description" content="Étudiant en BTS SIO SISR, passionné par l'administration réseau et les systèmes.">
-    <meta property="og:image" content="https://ebarbault.fr/og-image.jpg">
-    <meta property="og:locale" content="fr_FR">
+    <title>Estevan BARBAULT — Administration Réseau & Systèmes | BTS SIO SISR</title>
+    <meta name="description" content="Portfolio d'Estevan BARBAULT, étudiant en BTS SIO option SISR au Lycée Saint-Michel d'Annecy. Administration réseau, systèmes Linux/Windows, virtualisation Proxmox VE et recherche de stage.">
     <link rel="icon" type="image/svg+xml" href="logo-eb.svg">
     <link rel="stylesheet" href="css/style.css">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Estevan BARBAULT",
-        "jobTitle": "Étudiant BTS SIO SISR",
-        "email": "este.barbault@icloud.com",
-        "url": "https://ebarbault.fr",
-        "sameAs": ["https://github.com/est3van"],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Lovagny",
-            "addressRegion": "Haute-Savoie",
-            "postalCode": "74330",
-            "addressCountry": "FR"
-        },
-        "knowsAbout": ["Administration réseau", "Linux", "Windows Server", "Proxmox VE", "TCP/IP", "DNS", "DHCP"]
-    }
-    </script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NNPJSW4"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="brand">
+                <span class="brand-code">EB</span>
+                <span class="brand-name">Estevan Barbault</span>
+            </a>
 
-    <div class="page-wrapper">
-        <header class="site-header">
-            <div class="header-inner">
-                <a href="/" class="logo">
-                    <span class="logo-mark">EB</span>
-                    <span class="logo-text">Estevan BARBAULT</span>
-                </a>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html" class="active">Accueil</a></li>
-                        <li><a href="parcours.html">Parcours</a></li>
-                        <li><a href="competences.html">Compétences</a></li>
-                        <li><a href="projets.html">Projets</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-                    <span></span><span></span><span></span>
+            <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+                <a href="#parcours">Parcours</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Homelab & Projets</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button type="button" class="theme-switch" id="themeToggle" aria-label="Basculer entre Papier et Ardoise" aria-pressed="false">
+                    <span class="theme-dot"></span>
+                    <span id="themeLabel">Papier</span>
+                </button>
+                <button type="button" class="menu-btn" id="menuToggle" aria-label="Menu" aria-expanded="false">
+                    Menu
                 </button>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <section class="hero">
-                <div class="hero-inner">
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        <span>Recherche de stage informatique — BTS SIO SISR</span>
+                    </div>
+
                     <h1 class="hero-title">
                         Administration<br>
-                        <span class="accent">réseau & systèmes.</span>
+                        <span class="accent">réseau &amp; systèmes.</span>
                     </h1>
+
                     <p class="hero-lead">
-                        Étudiant en BTS SIO option SISR. Je construis, administre et sécurise des infrastructures — d'abord sur mon homelab, bientôt en entreprise.
+                        Titulaire d’un Bac Pro CIEL (mention Bien) et étudiant en <strong>BTS SIO option SISR</strong> au Lycée Saint-Michel d’Annecy. Fort de <strong>20 semaines d’immersion</strong> en milieu hospitalier, industriel et en collectivité, j’administre des infrastructures Linux, Windows et Proxmox VE.
                     </p>
-                    <div class="hero-actions">
-                        <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
-                        <a href="contact.html" class="btn btn-ghost">Me contacter</a>
-                    </div>
-                </div>
-                <div class="hero-photo">
-                    <img src="este.jpg" alt="Estevan BARBAULT" loading="lazy">
-                    <div class="image-shield"></div>
-                </div>
-            </section>
 
-            <section class="stats-section">
-                <div class="stats-grid">
-                    <div class="stat">
-                        <div class="stat-value">20</div>
-                        <div class="stat-label">Semaines de stage</div>
+                    <div class="hero-cta">
+                        <a href="CV_Estevan_BARBAULT.pdf" class="btn btn-primary" download="CV_Estevan_BARBAULT.pdf">
+                            Télécharger le CV (PDF)
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Me contacter
+                        </a>
                     </div>
-                    <div class="stat">
-                        <div class="stat-value">3</div>
-                        <div class="stat-label">Entreprises & collectivités</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">Mention Bien</div>
-                        <div class="stat-label">Bac Pro CIEL</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">24/7</div>
-                        <div class="stat-label">Homelab en ligne</div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="section">
-                <div class="section-inner">
-                    <div class="section-header">
-                        <h2 class="section-title">Ce que je fais</h2>
-                    </div>
-                    <div class="grid-3">
-                        <article class="feature-card">
-                            <div class="card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                            </div>
-                            <h3>Réseaux</h3>
-                            <p>TCP/IP, DNS, DHCP, adressage IPv4. Je comprends comment les paquets circulent et je sais diagnostiquer quand ils ne circulent plus.</p>
-                        </article>
-                        <article class="feature-card">
-                            <div class="card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                            </div>
-                            <h3>Systèmes</h3>
-                            <p>Linux (Debian/Ubuntu), Windows Server, Proxmox VE. Virtualisation de VM et conteneurs LXC pour isoler et tester.</p>
-                        </article>
-                        <article class="feature-card">
-                            <div class="card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                            </div>
-                            <h3>Homelab</h3>
-                            <p>Un serveur personnel pour apprendre sans casser la production : Jellyfin, Home Assistant, Samba, sauvegardes automatisées.</p>
-                        </article>
-                    </div>
+                    <dl class="hero-meta">
+                        <div>
+                            <dt>Localisation</dt>
+                            <dd>Lovagny / Bassin annécien (74)</dd>
+                        </div>
+                        <div>
+                            <dt>Mobilité</dt>
+                            <dd>Permis B + véhicule</dd>
+                        </div>
+                        <div>
+                            <dt>Courriel</dt>
+                            <dd><a href="mailto:contact@ebarbault.fr">contact@ebarbault.fr</a></dd>
+                        </div>
+                    </dl>
                 </div>
-            </section>
 
-            <section class="cta-section">
-                <div class="cta-inner">
-                    <h2>Travaillons ensemble.</h2>
-                    <p>Je suis ouvert aux opportunités d'alternance et aux collaborations dans le domaine de l'administration système et réseau.</p>
-                    <a href="contact.html" class="btn btn-primary">Me contacter</a>
-                </div>
-            </section>
-        </main>
+                <aside class="hero-card">
+                    <figure class="portrait-frame">
+                        <img src="este.jpg" alt="Portrait d'Estevan BARBAULT" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="portrait-fallback" style="display:none;" aria-hidden="true">
+                            <span>EB</span>
+                            <small>Photo : este.jpg</small>
+                        </div>
+                    </figure>
+                    <div class="hero-card-caption">
+                        <div>
+                            <strong>Estevan BARBAULT</strong>
+                            <span>Étudiant BTS SIO SISR · 18 ans</span>
+                        </div>
+                        <a href="https://github.com/est3van" target="_blank" rel="noopener" class="mono-link">Est3van↗</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-        <footer class="site-footer">
-            <div class="footer-inner">
-                <div class="footer-col">
-                    <div class="footer-name">Estevan BARBAULT</div>
-                    <div class="footer-role">Étudiant BTS SIO SISR</div>
+        <!-- CHIFFRES CLÉS -->
+        <section class="metrics" aria-label="Repères clés">
+            <div class="container metrics-grid">
+                <div class="metric-item">
+                    <span class="metric-value">20 sem.</span>
+                    <span class="metric-label">de stages en service informatique</span>
                 </div>
-                <div class="footer-col">
-                    <a href="mailto:este.barbault@icloud.com">este.barbault@icloud.com</a>
-                    <a href="tel:+33662888612">+33 6 62 88 86 12</a>
-                    <a href="https://github.com/est3van" target="_blank" rel="noopener">github.com/est3van</a>
+                <div class="metric-item">
+                    <span class="metric-value">3 structures</span>
+                    <span class="metric-label">Santé, industrie mondiale &amp; collectivité</span>
                 </div>
-                <div class="footer-col footer-col--right">
-                    <a href="mentions-legales.html">Mentions légales</a>
-                    <a href="cookies.html">Cookies</a>
-                    <span>Lovagny, Haute-Savoie</span>
-                    <span>&copy; 2026</span>
+                <div class="metric-item">
+                    <span class="metric-value">Mention Bien</span>
+                    <span class="metric-label">Bac Pro CIEL (Cybersécurité &amp; Réseaux)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-value">Proxmox VE</span>
+                    <span class="metric-label">Homelab auto-hébergé 24/7</span>
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <!-- PARCOURS & EXPÉRIENCES -->
+        <section id="parcours" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">01 — Terrain &amp; Formation</span>
+                    <h2>Expériences professionnelles et parcours</h2>
+                    <p>Des immersions concrètes au sein d’équipes DSI, du support utilisateur au déploiement de parc et à la gestion de tickets.</p>
+                </div>
+
+                <div class="two-col-split">
+                    <div>
+                        <h3 class="col-title">Expériences en entreprise</h3>
+                        <div class="entries-list">
+                            <article class="entry">
+                                <div class="entry-top">
+                                    <span class="entry-period">Terminale · 6 semaines</span>
+                                    <span class="entry-tag">Santé</span>
+                                </div>
+                                <h4>Service informatique — Centre Hospitalier de Rumilly</h4>
+                                <ul>
+                                    <li>Découverte de l’environnement numérique de l’hôpital et de 3 EHPAD rattachés.</li>
+                                    <li>Installation et maintenance de postes, traitement des demandes sous <strong>GLPI</strong>.</li>
+                                    <li>Collecte des besoins matériels pour la préparation budgétaire.</li>
+                                    <li>Gestion de données sensibles et assistance numérique pour la continuité de service.</li>
+                                </ul>
+                            </article>
+
+                            <article class="entry">
+                                <div class="entry-top">
+                                    <span class="entry-period">1ère · 4 semaines</span>
+                                    <span class="entry-tag">Industrie</span>
+                                </div>
+                                <h4>Service IT — Getinge Life Science France (Vendôme, 41)</h4>
+                                <ul>
+                                    <li>Immersion au sein de l’infrastructure informatique et réseau d’un groupe industriel international.</li>
+                                    <li>Installation, masterisation et configuration de postes pour les collaborateurs.</li>
+                                    <li>Diagnostic matériel/logiciel et support de proximité.</li>
+                                </ul>
+                            </article>
+
+                            <article class="entry">
+                                <div class="entry-top">
+                                    <span class="entry-period">2nde &amp; 1ère · 10 semaines</span>
+                                    <span class="entry-tag">Collectivité</span>
+                                </div>
+                                <h4>Service informatique — Ville d’Annecy (74)</h4>
+                                <ul>
+                                    <li>Découverte du réseau et des équipements connectés d’une collectivité (135 000 habitants, 3 000 agents).</li>
+                                    <li>Déploiement et préparation des postes informatiques pour les élections européennes.</li>
+                                    <li>Suivi et résolution d’incidents via <strong>Matrix 42</strong>.</li>
+                                </ul>
+                            </article>
+
+                            <article class="entry entry-compact">
+                                <div class="entry-top">
+                                    <span class="entry-period">Collège (4ème &amp; 3ème)</span>
+                                    <span class="entry-tag">Découverte</span>
+                                </div>
+                                <h4>Stages d’observation</h4>
+                                <p>GETINGE (3ème, 5 jours) · Micro-crèche « Nos petits pouces » (4ème, 4 jours).</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="col-title">Formations &amp; Engagement</h3>
+                        <div class="entries-list">
+                            <article class="entry">
+                                <div class="entry-top">
+                                    <span class="entry-period">À compter de sept. 2026</span>
+                                    <span class="entry-tag">En cours</span>
+                                </div>
+                                <h4>BTS SIO — Option SISR</h4>
+                                <p class="entry-sub">Lycée Saint-Michel, Annecy (74)</p>
+                                <p>Solutions d’Infrastructure, Systèmes et Réseaux : administration serveurs, routage/commutation, virtualisation, cybersécurité et scripting.</p>
+                            </article>
+
+                            <article class="entry">
+                                <div class="entry-top">
+                                    <span class="entry-period">2023 — 2026</span>
+                                    <span class="entry-tag">Mention Bien</span>
+                                </div>
+                                <h4>Bac Pro CIEL</h4>
+                                <p class="entry-sub">Lycée ISETA-ECA, Chavanod (74)</p>
+                                <p>Cybersécurité, Informatique et Réseaux, Électronique.</p>
+                            </article>
+
+                            <article class="entry">
+                                <div class="entry-top">
+                                    <span class="entry-period">2023</span>
+                                    <span class="entry-tag">Mention Très Bien</span>
+                                </div>
+                                <h4>Diplôme National du Brevet (DNB)</h4>
+                                <p class="entry-sub">Collège Simone Veil, Poisy (74)</p>
+                            </article>
+
+                            <article class="entry entry-compact">
+                                <div class="entry-top">
+                                    <span class="entry-period">2024 — 2026</span>
+                                    <span class="entry-tag">Citoyenneté</span>
+                                </div>
+                                <h4>Engagement citoyen</h4>
+                                <ul>
+                                    <li>Chantier éducatif — Communauté de communes Fier et Usses (2026)</li>
+                                    <li>Mission citoyenne — Centre de loisirs de Sillingy (2025)</li>
+                                    <li>Bénévolat pour la commune de Lovagny (2024)</li>
+                                    <li>Service National Universel (SNU) — Verrières-en-Forez (2024)</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPÉTENCES -->
+        <section id="competences" class="section section-tinted">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">02 — Savoir-faire technique</span>
+                    <h2>Compétences systèmes, réseaux &amp; support</h2>
+                    <p>Un socle technique acquis en formation et consolidé au quotidien sur mon serveur personnel.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <h3>Réseaux &amp; Infrastructure</h3>
+                        <ul class="clean-list">
+                            <li><strong>Architecture TCP/IP :</strong> adressage IPv4, sous-réseaux, segmentation VLAN, routage statique.</li>
+                            <li><strong>Services cœur de réseau :</strong> déploiement et diagnostic DNS, DHCP, accès distant SSH.</li>
+                            <li><strong>Interconnexion sécurisée :</strong> réseau maillé privé via <strong>Tailscale</strong> (WireGuard).</li>
+                            <li><strong>Diagnostic &amp; terrain :</strong> analyse de trames Wireshark, brassage en baie, tests de connectivité CLI.</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-box">
+                        <h3>Systèmes &amp; Virtualisation</h3>
+                        <ul class="clean-list">
+                            <li><strong>Hyperviseur Proxmox VE :</strong> création et gestion de machines virtuelles KVM et conteneurs LXC.</li>
+                            <li><strong>Stockage &amp; sauvegarde :</strong> gestion de volumes LVM, snapshots et sauvegardes planifiées.</li>
+                            <li><strong>Linux (Debian / Ubuntu) :</strong> administration en ligne de commande, services systemd, scripts Bash.</li>
+                            <li><strong>Windows &amp; Données :</strong> environnement Windows Server (AD, GPO), bases de données <strong>MySQL</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-box">
+                        <h3>Support, Outils &amp; Exploitation</h3>
+                        <ul class="clean-list">
+                            <li><strong>Gestion de parc &amp; ITSM :</strong> traitement et suivi de tickets sous <strong>GLPI</strong> et <strong>Matrix 42</strong>.</li>
+                            <li><strong>Documentation d’infrastructure :</strong> inventaire IPAM et topologie sous <strong>NetBox</strong>.</li>
+                            <li><strong>Sécurité opérationnelle :</strong> durcissement SSH, Fail2Ban, pare-feu, respect strict de la confidentialité.</li>
+                            <li><strong>Bureautique &amp; relationnel :</strong> Word, Excel, PowerPoint, écoute utilisateur, travail d’équipe.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="stack-bar" aria-label="Technologies pratiquées">
+                    <span>Proxmox VE</span>
+                    <span>Debian / Ubuntu</span>
+                    <span>Linux LXC / KVM</span>
+                    <span>Tailscale</span>
+                    <span>NetBox</span>
+                    <span>GLPI</span>
+                    <span>Matrix 42</span>
+                    <span>MySQL</span>
+                    <span>TCP/IP · VLAN · DNS · DHCP</span>
+                    <span>Windows Server</span>
+                    <span>Bash</span>
+                    <span>Git / GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS & HOMELAB -->
+        <section id="projets" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">03 — Réalisations</span>
+                    <h2>Homelab &amp; projets techniques</h2>
+                    <p>Des mises en pratique concrètes pour expérimenter l’administration d’infrastructure en conditions réelles.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Infrastructure</span>
+                            <span class="status-live">En production 24/7</span>
+                        </div>
+                        <h3>Homelab sous Proxmox VE</h3>
+                        <p>
+                            Conception et administration d’un serveur dédié hébergeant des machines virtuelles et conteneurs LXC sous Debian. Gestion du stockage sur LVM, isolation des services et supervision des ressources.
+                        </p>
+                        <div class="project-tags">
+                            <span>Proxmox VE</span>
+                            <span>Debian</span>
+                            <span>LXC / KVM</span>
+                            <span>LVM</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Réseau &amp; Documentation</span>
+                            <span>Continu</span>
+                        </div>
+                        <h3>Interconnexion Tailscale &amp; Référentiel NetBox</h3>
+                        <p>
+                            Mise en place d’un réseau privé chiffré via Tailscale pour administrer l’infrastructure à distance sans exposer les ports sensibles, couplé à une documentation complète des adresses IP, VLAN et machines sous NetBox.
+                        </p>
+                        <div class="project-tags">
+                            <span>Tailscale</span>
+                            <span>NetBox</span>
+                            <span>IPAM</span>
+                            <span>SSH</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Auto-hébergement Web</span>
+                            <span>ebarbault.fr</span>
+                        </div>
+                        <h3>Hébergement du portfolio personnel</h3>
+                        <p>
+                            Déploiement et maintenance de ce site web directement sur mon serveur Proxmox : configuration du serveur web, certificat TLS/HTTPS, gestion DNS et optimisation des ressources statiques.
+                        </p>
+                        <div class="project-tags">
+                            <span>Linux</span>
+                            <span>HTTPS / TLS</span>
+                            <span>DNS</span>
+                            <span>HTML / CSS / JS</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Terrain</span>
+                            <span>Ville d’Annecy</span>
+                        </div>
+                        <h3>Déploiement de postes — Élections européennes</h3>
+                        <p>
+                            Préparation, configuration et mise en service des postes informatiques dédiés au dispositif électoral de la Ville d’Annecy, avec suivi des interventions et support technique.
+                        </p>
+                        <div class="project-tags">
+                            <span>Déploiement</span>
+                            <span>Matrix 42</span>
+                            <span>Support N1/N2</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section-tinted">
+            <div class="container contact-grid">
+                <div class="contact-aside">
+                    <span class="eyebrow">04 — Contact</span>
+                    <h2>Échanger autour d’un stage</h2>
+                    <p>
+                        Vous recherchez un stagiaire motivé en administration systèmes et réseaux sur le bassin annécien ou en Haute-Savoie ? Écrivez-moi directement.
+                    </p>
+
+                    <div class="contact-cards">
+                        <div class="contact-row">
+                            <div>
+                                <span class="contact-label">Courriel professionnel</span>
+                                <a href="mailto:contact@ebarbault.fr" class="contact-val">contact@ebarbault.fr</a>
+                            </div>
+                            <button type="button" class="copy-btn" data-copy="contact@ebarbault.fr">Copier</button>
+                        </div>
+
+                        <div class="contact-row">
+                            <div>
+                                <span class="contact-label">Téléphone direct</span>
+                                <span id="phoneLocked" class="contact-val contact-locked">
+                                    Débloqué après envoi d’un message ci-contre
+                                </span>
+                                <a id="phoneUnlocked" href="tel:+33662888612" class="contact-val" style="display:none;">
+                                    06 62 88 86 12
+                                </a>
+                            </div>
+                            <button type="button" id="copyPhoneBtn" class="copy-btn" data-copy="06 62 88 86 12" style="display:none;">Copier</button>
+                        </div>
+
+                        <div class="contact-row">
+                            <div>
+                                <span class="contact-label">Secteur géographique</span>
+                                <span class="contact-val">Lovagny (74330) · Annecy et alentours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div>
+                                <span class="contact-label">Curriculum Vitae</span>
+                                <a href="CV_Estevan_BARBAULT.pdf" download="CV_Estevan_BARBAULT.pdf" class="contact-val">Télécharger le PDF (1 page)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-box">
+                    <h3>Envoyer un message</h3>
+                    <p class="form-hint">L’envoi du formulaire débloque immédiatement mon numéro de téléphone direct.</p>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="name">Nom / Entreprise *</label>
+                                <input type="text" id="name" name="name" required placeholder="Ex. Jean Dupont — DSI">
+                            </div>
+                            <div class="field">
+                                <label for="email">Votre adresse mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="nom@entreprise.fr">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="subject">Objet</label>
+                            <input type="text" id="subject" name="subject" placeholder="Proposition de stage BTS SIO SISR">
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Bonjour Estevan, nous souhaiterions échanger au sujet d'un stage..."></textarea>
+                        </div>
+
+                        <div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div>
+
+                        <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+                            Envoyer le message et débloquer le 06
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>Estevan BARBAULT</strong> — BTS SIO option SISR
+            </div>
+            <div class="footer-links">
+                <a href="mailto:contact@ebarbault.fr">contact@ebarbault.fr</a>
+                <span>·</span>
+                <a href="https://github.com/est3van" target="_blank" rel="noopener">GitHub</a>
+                <span>·</span>
+                <a href="CV_Estevan_BARBAULT.pdf" download>CV (PDF)</a>
+            </div>
+            <div class="footer-note">
+                © 2026 Estevan BARBAULT · Auto-hébergé sur Proxmox VE
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
